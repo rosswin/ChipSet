@@ -1,6 +1,7 @@
 # ChipSet
 Build better computer vision pipelines for geospatial data by splitting large images into sets of smaller images (or "chips") using ChipSet!
 
+## Description
 ChipSet includes tools for "chipping" large geospatial images into small, contiguous chunks so that computer vision algorithms can focus on 
 one small patch. Efficient chipping operations are critical when working with large batches of 10,000 x 10,000 pixel satellite images (or larger!) and the YOLO classifier works on images of size 640 x 640 pixels.
 
@@ -23,3 +24,11 @@ Right now `git clone` and creating an environment from `requirements.txt` is the
 ## Usage
 **COMING SOON**
 Full usage instruction coming soon, but in the meantime the `Example_GeoChipSet.ipynb` Notebbok is included as an example of the high-level workflow.
+
+
+## Testing
+Basic unit testing is included for the core operations. More testing to come in the future. The following command will run the full test suite:
+
+```python
+python -m unittest discover -s tests
+```
